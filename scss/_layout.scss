@@ -1,0 +1,86 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+.header {
+  padding: 60px 0;
+}
+.main {
+  &__box {
+    border: solid 1rem #f6dfce;
+    min-height: 872px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &--1 {
+      background: url("../img/orange-bg.png") no-repeat center top;
+      background-position: top;
+      background-size: 100%;
+    }
+    &--2 {
+      background: url("../img/purple-bg.png") no-repeat center top;
+      background-position: top;
+      background-size: 100%;
+    }
+  }
+  &__header {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: #000000;
+    font-size: 4.4rem;
+    line-height: 4.8rem;
+    font-weight: 300;
+    margin-bottom: 6rem;
+    &--italic {
+      font-family: "Lobster", Helvetica, sans-serif;
+      letter-spacing: .2rem;
+    }
+  }
+  &__text {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: #000000;
+    font-size: 3.6rem;
+    font-weight: 300;
+    line-height: 4.4rem;
+    margin-top: 6rem;
+  }
+  &__letsGoBtn {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    background-color:#7C39B3;
+    color: #ffffff;
+    border-radius: .4rem;
+    padding: 1.2rem;
+    min-width: 12.4rem;
+    font-size: 1.35rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .02rem;
+    text-transform: uppercase;
+    border: none;
+    margin: 6rem auto 0;
+  }
+  .inactive {
+    display: none;
+  }
+  .active {
+    display: flex;
+  }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  
+}
