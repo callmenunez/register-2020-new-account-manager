@@ -9,6 +9,7 @@
   <meta name="author" content="David Nunez">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
   <!-- HTML5 Shiv, this allows older versions of ie9 to accept html5. Must live in the header, below any stylesheets -->
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
@@ -46,33 +47,78 @@
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <div class="main__box main__box--1">
-            <h1 class="main__header">
-              Say <span class="main__header--italic">Hello</span> to the New Account Manager
-            </h1>
-            <p class="main__text">
-              With common-sense navigation and <br>
-              clear labels, it's now easier to manage<br>
-              your digital services and launch all<br>
-              your tools.
-            </p>
-            <p class="main__text">
-              Let's take a closer look...
-            </p>
-            <button class="main__letsGoBtn">
-              Let's Go
-            </button>
+          
+          <div class="main__box">
+            <!-- slide 1 -->
+            <div class="main__slide1">
+              <h1 class="main__header">
+                Say <span class="main__header--italic">Hello</span> to the New Account Manager
+              </h1>
+              <p class="main__text">
+                With common-sense navigation and <br>
+                clear labels, it's now easier to manage<br>
+                your digital services and launch all<br>
+                your tools.
+              </p>
+              <p class="main__text">
+                Let's take a closer look...
+              </p>
+              <button class="main__btn main__btn--letsGo">
+                Let's Go
+              </button>
+            </div>
+            <!-- slide 2 -->
+            <div class="main__slide2 inactive">
+              <!-- slide 2 content/ -->
+              <div class="main__slide2--content">
+                <h1 class="main__header">
+                  Find what you need with <span class="main__header--italic">Intuitive Navigation</span>.
+                </h1>
+                <img class="main__img main__img--1" src="img/img1.png"/>
+              </div>
+              <!-- Progress bar -->
+              <div class="main__progressSection">
+                <div class="main__progressButtons">
+                  <button class="main__btn main__btn--back" aria-label="Previous" type="button">
+                    Back
+                  </button>
+                  <button class="main__btn main__btn--next" aria-label="Next" type="button">
+                    Next
+                  </button>
+                </div>
+                <div class="progress main__progressBar ">
+                  <div class="progress-bar main__progressBarBackground" role="progressbar" style="width: 16.5%;" aria-valuenow="16.5" aria-valuemin="16" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="main__slide3 inactive">
+              <!-- slide 3 content/ -->
+              <div class="main__slide3--content">
+                <h1 class="main__header main__header--3">
+                  View and manage all of your  <span class="main__header--italic">Products & Services</span>.
+                </h1>
+                <img class="main__img main__img--2" src="img/img2.png"/>
+              </div>
+              <!-- Progress bar -->
+              <div class="main__progressSection">
+                <div class="main__progressButtons">
+                  <button class="main__btn main__btn--back" aria-label="Previous" type="button">
+                    Back
+                  </button>
+                  <button class="main__btn main__btn--next" aria-label="Next" type="button">
+                    Next
+                  </button>
+                </div>
+                <div class="progress main__progressBar ">
+                  <div class="progress-bar main__progressBarBackground" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="33" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-          <div class="main__box main__box--2 inactive">
-            <h1 class="main__header">
-              Find what you need with<span class="main__header--italic">Intuitive Navigation</span>.
-            </h1>
-            <img src="img/img1.png"/>
-            <button class="main__letsGoBtn">
-              Let's Go
-            </button>
-          </div>
 
         </div>
       </div>
@@ -85,14 +131,21 @@
 
   <script>
     $(function() {
-      $( ".main__letsGoBtn" ).click(function() {
-        $( ".main__box--1" ).toggle();
-        if ($( ".main__box--2" ).hasClass('inactive')) {
-          $(".main__box--2").addClass('active');
-          $(".main__box--2").removeClass('inactive');
+      $( ".main__btn--letsGo" ).click(function() {
+        $( ".main__slide1" ).toggle();
+        if ($( ".main__slide2" ).hasClass('inactive')) {
+          $(".main__slide2").addClass('active').removeClass('inactive');
+        }
+      });
+
+      $( ".main__btn--next" ).click(function() {
+        $( ".main__slide2" ).toggle();
+        if ($( ".main__slide3" ).hasClass('inactive')) {
+          $(".main__slide3").addClass('active').removeClass('inactive');
         }
       });
     });
     </script>
+
 </body>
 </html>
