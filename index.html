@@ -9,7 +9,7 @@
   <meta name="author" content="David Nunez">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <!-- HTML5 Shiv, this allows older versions of ie9 to accept html5. Must live in the header, below any stylesheets -->
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
@@ -50,7 +50,7 @@
           
           <div class="main__box">
             <!-- slide 1 -->
-            <div class="main__slide1">
+            <!-- <div class="main__slide1">
               <h1 class="main__header">
                 Say <span class="main__header--italic">Hello</span> to the New Account Manager
               </h1>
@@ -66,59 +66,91 @@
               <button class="main__btn main__btn--letsGo">
                 Let's Go
               </button>
-            </div>
-            <!-- slide 2 -->
-            <div class="main__slide2 inactive">
+            </div> -->
+
+
+            <!-- slide section -->
+            <div class="main__slideSection text-center">
+              <!-- slide 1 -->
+              <div class="">
+                <h1 class="main__header main__header--marginTop">
+                  Say <span class="main__header--italic">Hello</span> to the New Account Manager
+                </h1>
+                <p class="main__text">
+                  With common-sense navigation and <br>
+                  clear labels, it's now easier to manage<br>
+                  your digital services and launch all<br>
+                  your tools.
+                </p>
+                <p class="main__text">
+                  Let's take a closer look...
+                </p>
+              </div>
               <!-- slide 2 content/ -->
-              <div class="main__slide2--content">
-                <h1 class="main__header">
+              <div class="">
+                <h1 class="main__header main__header--marginBottom">
                   Find what you need with <span class="main__header--italic">Intuitive Navigation</span>.
                 </h1>
-                <img class="main__img main__img--1" src="img/img1.png"/>
+                <img class="main__img main__img--marginTop" src="img/img1.png"/>
               </div>
-              <!-- Progress bar -->
-              <div class="main__progressSection">
-                <div class="main__progressButtons">
-                  <button class="main__btn main__btn--back" aria-label="Previous" type="button">
-                    Back
-                  </button>
-                  <button class="main__btn main__btn--next" aria-label="Next" type="button">
-                    Next
-                  </button>
-                </div>
-                <div class="progress main__progressBar ">
-                  <div class="progress-bar main__progressBarBackground" role="progressbar" style="width: 16.5%;" aria-valuenow="16.5" aria-valuemin="16" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="main__slide3 inactive">
-              <!-- slide 3 content/ -->
-              <div class="main__slide3--content">
-                <h1 class="main__header main__header--3">
+              <!-- slide 3 content -->
+              <div class="">
+                <h1 class="main__header">
                   View and manage all of your  <span class="main__header--italic">Products & Services</span>.
                 </h1>
-                <img class="main__img main__img--2" src="img/img2.png"/>
+                <img class="main__img" src="img/img2.png"/>
               </div>
-              <!-- Progress bar -->
-              <div class="main__progressSection">
-                <div class="main__progressButtons">
-                  <button class="main__btn main__btn--back" aria-label="Previous" type="button">
-                    Back
-                  </button>
-                  <button class="main__btn main__btn--next" aria-label="Next" type="button">
-                    Next
-                  </button>
-                </div>
-                <div class="progress main__progressBar ">
-                  <div class="progress-bar main__progressBarBackground" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="33" aria-valuemax="100"></div>
-                </div>
+              <!-- slide 4 content -->
+              <div class="">
+                <h1 class="main__header">
+                  From <span class="main__header--italic">Account Settings</span>, you can maintain your user profile and keep important information current.
+                </h1>
+                <img class="main__img" src="img/img3.png"/>
+              </div>
+              <!-- slide 5 content -->
+              <div class="">
+                <h1 class="main__header">
+                  See your billing history and manage your payments in the <span class="main__header--italic">Billing & Payments</span> section.
+                </h1>
+                <img class="main__img" src="img/img4.png"/>
+              </div>
+              <!-- slide 6 content -->
+              <div class="">
+                <h1 class="main__header">
+                  In the <span class="main__header--italic">Renewal Center</span>, you can keep tabs on your products and when they're due to expire. When it's time, renew them or turn on auto-renew.
+                </h1>
+                <img class="main__img" src="img/img5.png"/>
+              </div>
+              <!-- slide 7 content -->
+              <div class="">
+                <h1 class="main__header">
+                  Click <span class="main__header--italic">Help</span> to find customer support phone numbers, open a support ticket or read answers to popular questions.
+                </h1>
+                <img class="main__img" src="img/img6.png"/>
+              </div>
+              <!-- slide 8 -->
+              <div class="">
+                <h1 class="main__header main__header--marginTop">
+                  Now that you've seen where things<br> 
+                  are located, it's time to explore on<br> 
+                  your own.
+                </h1>
+                <h1 class="main__header">
+                  <span class="main__header--italic">Let's get started</span>
+                </h1>
+                <button class="main__btn main__btn--getStarted">
+                  Get Started
+                </button>
+              </div>
+            </div>
+            <!-- Progress bar -->
+            <div class="main__progressSection">
+              <div class="progress main__progressBar ">
+                <div class="progress-bar main__progressBarBackground" role="progressbar" style="" aria-valuenow="" aria-valuemin="" aria-valuemax="100"></div>
               </div>
             </div>
 
           </div>
-
 
         </div>
       </div>
@@ -128,24 +160,56 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
   <script>
-    $(function() {
-      $( ".main__btn--letsGo" ).click(function() {
-        $( ".main__slide1" ).toggle();
-        if ($( ".main__slide2" ).hasClass('inactive')) {
-          $(".main__slide2").addClass('active').removeClass('inactive');
-        }
+
+    $(document).ready(function() {
+      var $slider = $('.main__slideSection');
+      var $progressBar = $('.progress');
+      var $progressBarLabel = $( '.slider__label' );
+
+      $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+        var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+        
+        $progressBar
+          .css('background-size', calc + '% 100%')
+          .attr('aria-valuenow', calc );
+        
+        $progressBarLabel.text( calc + '% completed' );
       });
 
-      $( ".main__btn--next" ).click(function() {
-        $( ".main__slide2" ).toggle();
-        if ($( ".main__slide3" ).hasClass('inactive')) {
-          $(".main__slide3").addClass('active').removeClass('inactive');
+      
+      $slider.on('afterChange', function (event, slick, currentSlide) {
+        if(currentSlide === 7) {
+          $('.main__btn--next').addClass('hidden');
+          $('.main__btn--back').addClass('hidden');
+          $('.main__progressSection').addClass('hidden');
         }
-      });
+        // else {
+        //   $('.main__btn--next').removeClass('hidden');
+        // }
+        if(currentSlide === 0) {
+          $('.main__btn--back').addClass('faded');
+        }
+        else {
+          $('.main__btn--back').removeClass('faded');
+        }  
+      })
+
+      $slider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        speed: 400,
+        nextArrow: '<button class="main__btn main__btn--next" aria-label="Next" type="button">Next</button>',
+        prevArrow: '<button class="main__btn main__btn--back faded" aria-label="Previous" type="button">Back</button>'
+      });  
+
+
     });
-    </script>
+
+  </script>
 
 </body>
 </html>
