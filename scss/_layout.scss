@@ -63,8 +63,13 @@
       color: #ffffff;
       border: 1px solid #7C39B3;
       padding: 1.2rem 3rem;
+      max-width: 16rem;
       &:focus {
         outline: none;
+      }
+      &:hover {
+        color: #ffffff !important;
+        text-decoration: none;
       }
     } 
     &--next {
