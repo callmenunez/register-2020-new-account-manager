@@ -1,9 +1,9 @@
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 .header {
-  padding: 30px 0;
+  padding: 3rem 0;
   &__logo {
-    width: 150px;
+    width: 15rem;
   }
 }
 .main {
@@ -63,6 +63,9 @@
       color: #ffffff;
       border: 1px solid #7C39B3;
       padding: 1.2rem 3rem;
+      &:focus {
+        outline: none;
+      }
     } 
     &--next {
       background-color:#7C39B3;
@@ -71,8 +74,8 @@
       margin-left: 2rem;
       margin-top: 0;
       position: absolute;
-      bottom: -30px;
-      right: 10px;
+      bottom: -3rem;
+      right: 1rem;
       transition: .5s;
       &.hidden {
         opacity: 0;
@@ -87,8 +90,8 @@
       margin-right: 2rem;
       margin-top: 0;
       position: absolute;
-      bottom: -30px;
-      left: 10px;
+      bottom: -3rem;
+      left: 1rem;
       transition: .5s;
       &.hidden {
         opacity: 0;
@@ -101,7 +104,7 @@
     width: 100%;
     height: auto;
     margin: auto;
-    max-width: 73.8rem;
+    max-width: 60rem;
     max-height: 46rem;
     &--marginTop {
       margin-top: 12rem;
@@ -144,20 +147,17 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .header {
-    padding: 60px 0;
     &__logo {
-      width: 100%;
+      width: 20rem;
     }
   }
   .main {
     &__box {
-      max-height: 800px;
+      max-height: 70rem;
       padding: 0 4rem;
     }
     &__header {
-      font-size: 3rem;
-      line-height: 3.6rem;
-      margin-top: 6rem;
+      margin-top: 3rem;
       &--marginTop {
         margin-top: 12rem;
       }
@@ -172,17 +172,23 @@
     }
     &__btn {
       &--next {
-        right: 150px;
-        bottom: -75px;
+        right: 15rem;
+        bottom: -7.5rem;
+        &:focus {
+          outline: none;
+        }
       }
       &--back {
-        left: 150px;
-        bottom: -75px;
+        left: 15rem;
+        bottom: -7.5rem;
+        &:focus {
+          outline: none;
+        }
       }
     }
     &__img {
       &--marginTop {
-        margin-top: 22rem;
+        margin-top: 18rem;
       }
     }
     &__progressSection {
@@ -195,25 +201,25 @@
 @media (min-width: 992px) { 
   .main {
     &__box {
-      min-height: 872px;
+      // min-height: 872px;
     }
     &__header {
-      font-size: 4.4rem;
-      line-height: 4.8rem;
+      font-size: 3rem;
+      line-height: 3.6rem;
       &--marginTop {
-        margin-top: 20rem;
+        margin-top: 12rem;
       }
     }
     &__text {
-      font-size: 3.6rem;
-      line-height: 4.4rem;
+      font-size: 2.6rem;
+      line-height: 3.2rem;
     }
     &__btn {
       &--next {
-        right: 350px;
+        right: 35rem;
       }
       &--back {
-        left: 350px;
+        left: 35rem;
       }
     }
   }
